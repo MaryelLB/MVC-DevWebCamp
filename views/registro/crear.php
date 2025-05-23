@@ -50,8 +50,7 @@
     </div>
 </main>
 
-<script src="https://www.paypal.com/sdk/js?client-id=AflFlNemtgfPT4fFp2UM6itwA5oiJgJSGHTsga8soShPqFfZwhCemFX5OWesPAAiuX_6FJRdTVAiz9fl&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
-
+<script src="https://www.paypal.com/sdk/js?client-id=<?= $_ENV['PAYPAL_CLIENT_ID'] ?>&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
 <script>
     function initPayPalButton() {
         paypal.Buttons({
